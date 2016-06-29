@@ -22,7 +22,6 @@
 
 .language-cert-wrapper .progress{
   float: right;
-  width: 80%;
   margin: 0;
 
   @media (max-width: $screen-xs-max) {
@@ -46,7 +45,6 @@
 .progress {
   overflow: hidden;
   border-bottom: 1px solid $light-gray;
-  width: 80%;
 }
 
 .progress-status {
