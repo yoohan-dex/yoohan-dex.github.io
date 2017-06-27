@@ -1,0 +1,96 @@
+.page {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: 100% 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.panel {
+  width: 135px;
+  height: 150px;
+  position: relative;
+  padding: 5px;
+  top: 32.5%;
+  margin: 0 auto;
+  background: white;
+
+  & .qrcode {
+    width: 125px;
+    height: 125px;
+    position: relative;
+    display: block;
+    background-size: 100% 100%;
+    font-size: 8px;
+    text-align: center;
+    background-blend-mode: screen;
+    background-image:  linear-gradient(to right, #D43A50 0%,#D43A50 100%),url('http://tycm.dgxtx.com/vo/code.php?url=http://tycm.dgxtx.com/vo/share.php?str=b3Z2T053UFRzV3hkNUZmbGkyTDlaQ0pGdENEbw==');
+      &::after {
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      width: 100%;
+      color: #D43A50;
+      content: '更多详情请关注金沙洲万达广场';
+    }
+
+    &::before {
+      content: ' ';
+      height: 100px;
+      width: 100px;
+      position: absolute;
+      top: -20px;
+      left: 140px;
+      background-size: 100px;
+      background-repeat: no-repeat;
+      background-image: url('../../img/page/P2-dialog.png');
+    }
+  }
+
+  .loveshare {
+    position: relative;
+    top: 40px;
+    background-image: url('../../img/page/P2-btn.png');
+    width: 120px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: 120px;
+  }
+}
+
+.disappear {
+  display: none;
+}
+
+@keyframes enter {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.qrcodePage,
+.sendPage,
+.gamePage,
+.ipadPage {
+  animation: enter 0.4s;
+}
+
+.enterPage {
+  background-image: url('../../img/page/P1.jpg');
+}
+.qrcodePage {
+  background-image: url('../../img/page/P2.png');  
+}
+.sendPage {
+  background-image: url('../../img/page/bg.png');  
+}
+.gamePage {
+  background-image: url('../../img/page/P6-bg.png');
+}
+.ipadPage {
+  background-image: url('../../img/page/ipad.jpg');  
+}

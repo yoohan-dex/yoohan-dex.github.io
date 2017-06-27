@@ -1,0 +1,74 @@
+.gear {
+  background-repeat: no-repeat;
+}
+
+.gear-lg {
+  height: 50%;
+  width: 50%;
+}
+
+@keyframes sending {
+  0% {
+    left: 20%;
+    transform: rotate(0deg);    
+  }
+  100% {
+    left: 60%;
+    transform: rotate(20deg);
+  }
+}
+.flower {
+  background-image: url('../../img/page/P3-A-minrose.png');
+  top: 25%;
+  position: absolute;
+  left: 20%;
+}
+.sending {
+  left: 60%;
+  transform: rotate(20deg);
+  animation: sending 4s;
+}
+
+.btn-send, .btn-send-g {
+  background-image: url('../../img/page/P3-A-btn.png');
+  height: 100px;
+  width: 100px;
+  background-size: 100px;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+}
+
+.btn-send-g {
+  background-image: url('../../img/page/P3-A-btn-g.png');
+  transition: all 0.5s;
+  right: 50%;
+  top: 70%;
+}
+
+.btn-acc, .btn-acc-g {
+  background-image: url('../../img/page/P3-B-btn.png');
+  height: 100px;
+  width: 100px;
+  background-size: 100px;
+}
+
+.btn-acc-g {
+  background-image: url('../../img/page/P3-B-btn-g.png');
+}
+.btn-game-1, .btn-game-2 {
+  height: 100px;
+  width: 150px;
+  background-size: 150px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.btn-game-1 {
+  top: 40%;
+  background-image: url('../../img/page/P6-btn1.png');  
+}
+.btn-game-2 {
+  top: 36%;
+  background-image: url('../../img/page/P6-btn2.png');  
+}
