@@ -66,7 +66,7 @@
   }
 }
 .flower {
-  background-image: url('../../img/page/P3-A-minrose.png');
+  background-image: url('img/page/P3-A-minrose.png');
   top: 30%;
   position: absolute;
   background-size: 150px;
@@ -74,14 +74,14 @@
   transform: rotate(-20deg);
 }
 .flower-lg {
-  background-image: url('../../img/page/P4-A-rose.png');
+  background-image: url('img/page/P4-A-rose.png');
   background-size: 200px;
   top: 20%;
   position: absolute;
   left: 30%;
 }
 .flower-lg-acc {
-  background-image: url('../../img/page/P4-A-rose.png');
+  background-image: url('img/page/P4-A-rose.png');
   background-size: 200px;
   top: 20%;
   position: absolute;
@@ -107,14 +107,14 @@
 }
 
 .hearts-l {
-  background-image: url('../../img/page/P5-A-heart.png');  
+  background-image: url('img/page/P5-A-heart.png');  
   top: 15%;
   position: absolute;
   animation: sending2 4s;
   left: 150%;
 }
 .heart-l {
-  background-image: url('../../img/page/P5-A-heart1.png');  
+  background-image: url('img/page/P5-A-heart1.png');  
   top: 40%;
   position: absolute;
   animation: sending2 4s;
@@ -125,7 +125,7 @@
 }
 
 .btn-send, .btn-send-g {
-  background-image: url('../../img/page/P3-A-btn.png');
+  background-image: url('img/page/P3-A-btn.png');
   height: 100px;
   width: 100px;
   background-size: 100px;
@@ -135,7 +135,7 @@
 }
 
 .btn-send-g {
-  background-image: url('../../img/page/P3-A-btn-g.png');
+  background-image: url('img/page/P3-A-btn-g.png');
   transition: all 0.5s;
   right: 50%;
   top: 70%;
@@ -153,7 +153,7 @@
   }
 }
 .btn-acc, .btn-acc-g {
-  background-image: url('../../img/page/P3-B-btn.png');
+  background-image: url('img/page/P3-B-btn.png');
   position: relative;
   margin: 0 auto;
   top: 40%;
@@ -167,7 +167,7 @@
 }
 
 .btn-acc-g {
-  background-image: url('../../img/page/P3-B-btn-g.png');
+  background-image: url('img/page/P3-B-btn-g.png');
   top: 80%;
   transform: scale(0.8);
 }
@@ -181,11 +181,11 @@
 
 .btn-game-1 {
   top: 40%;
-  background-image: url('../../img/page/P6-btn1.png');  
+  background-image: url('img/page/P6-btn1.png');  
 }
 .btn-game-2 {
   top: 36%;
-  background-image: url('../../img/page/P6-btn2.png');  
+  background-image: url('img/page/P6-btn2.png');  
 }
 
 .rule {
@@ -194,7 +194,7 @@
   background-size: 100%;
   width: 100%;
   background-blend-mode: screen;
-  background-image: linear-gradient(to right, #D43A50 0%, #D43A50 100%), url('../../img/page/P7-txt.png');    
+  background-image: linear-gradient(to right, #D43A50 0%, #D43A50 100%), url('img/page/P7-txt.png');    
 }
 
 .back {
@@ -226,5 +226,5 @@
   position: relative;
   top: 45%;
   margin: 0 auto;
-  background-image: url('../../img/page/P8-btn1.png');  
+  background-image: url('img/page/P8-btn1.png');  
 }
