@@ -3,30 +3,125 @@
 }
 
 .gear-lg {
-  height: 50%;
-  width: 50%;
+  height: 80%;
+  width: 80%;
+}
+.gear-sm {
+  height: 100px;
+  width: 100px;
+  background-size: 100px;
+}
+.gear-md {
+  height: 150px;
+  width: 150px;
+  background-size: 150px;
 }
 
 @keyframes sending {
   0% {
-    left: 20%;
+    left: 30%;
     transform: rotate(0deg);    
   }
   100% {
-    left: 60%;
+    left: 150%;
     transform: rotate(20deg);
+  }
+}
+@keyframes sending2 {
+  0% {
+    left: 30%;
+    transform: rotate(0deg) scale(0);    
+  }
+  100% {
+    left: 150%;
+    transform: rotate(20deg) scale(1);
+  }
+}
+@keyframes sending3 {
+  0% {
+    left: 30%;
+    transform: rotate(-20deg);    
+  }
+  100% {
+    left: 80%;
+    transform: rotate(-40deg) scale(1.5);
+  }
+}
+@keyframes accepting {
+  0% {
+    left: -40%;
+    transform: rotate(-20deg);    
+  }
+  100% {
+    left: 0%;
+    transform: rotate(40deg);
+  }
+}
+@keyframes accepting2 {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: -20%;
   }
 }
 .flower {
   background-image: url('../../img/page/P3-A-minrose.png');
-  top: 25%;
+  top: 30%;
   position: absolute;
-  left: 20%;
+  background-size: 150px;
+  left: 30%;
+  transform: rotate(-20deg);
 }
+.flower-lg {
+  background-image: url('../../img/page/P4-A-rose.png');
+  background-size: 200px;
+  top: 20%;
+  position: absolute;
+  left: 30%;
+}
+.flower-lg-acc {
+  background-image: url('../../img/page/P4-A-rose.png');
+  background-size: 200px;
+  top: 20%;
+  position: absolute;
+  left: 0%;
+  transform: rotate(40deg);
+}
+
 .sending {
-  left: 60%;
+  left: 150%;
   transform: rotate(20deg);
   animation: sending 4s;
+}
+.sending3 {
+  left: 80%;
+  transform: rotate(20deg) scale(1.5);
+  animation: sending3 4s;
+}
+.accepting {
+  animation: accepting 4s;
+}
+.accepting2 {
+  animation: accepting2 4s;
+}
+
+.hearts-l {
+  background-image: url('../../img/page/P5-A-heart.png');  
+  top: 15%;
+  position: absolute;
+  animation: sending2 4s;
+  left: 150%;
+}
+.heart-l {
+  background-image: url('../../img/page/P5-A-heart1.png');  
+  top: 40%;
+  position: absolute;
+  animation: sending2 4s;
+  left: 150%;
+}
+.scale {
+  transform: scale(1);
 }
 
 .btn-send, .btn-send-g {
@@ -46,15 +141,35 @@
   top: 70%;
 }
 
+@keyframes down {
+  0% {
+    top: 40%;
+  transform: scale(1);
+    
+  }
+  100% {
+    top: 80%;
+  transform: scale(0.8);
+  }
+}
 .btn-acc, .btn-acc-g {
   background-image: url('../../img/page/P3-B-btn.png');
-  height: 100px;
-  width: 100px;
-  background-size: 100px;
+  position: relative;
+  margin: 0 auto;
+  top: 40%;
+  transform: scale(1);
+  
+}
+.down {
+  animation: down 4s;
+  top: 80%;
+  transform: scale(0.8);  
 }
 
 .btn-acc-g {
   background-image: url('../../img/page/P3-B-btn-g.png');
+  top: 80%;
+  transform: scale(0.8);
 }
 .btn-game-1, .btn-game-2 {
   height: 100px;
@@ -71,4 +186,45 @@
 .btn-game-2 {
   top: 36%;
   background-image: url('../../img/page/P6-btn2.png');  
+}
+
+.rule {
+  top: 36%; 
+  position: absolute;
+  background-size: 100%;
+  width: 100%;
+  background-blend-mode: screen;
+  background-image: linear-gradient(to right, #D43A50 0%, #D43A50 100%), url('../../img/page/P7-txt.png');    
+}
+
+.back {
+  top: 78%; 
+  position: absolute;
+  font-size: 35px;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.input {
+  position: relative;
+  top:43%;
+  margin: 0 auto 10px;
+  display: block;
+  width: 70%;
+  outline: none;
+  border: 2px solid white;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: bolder;
+  color: white;
+  padding: 5px 20px;
+  background: rgba(0,0,0,0);
+}
+
+.price {
+  position: relative;
+  top: 45%;
+  margin: 0 auto;
+  background-image: url('../../img/page/P8-btn1.png');  
 }
